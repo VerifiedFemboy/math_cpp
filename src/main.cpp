@@ -1,8 +1,7 @@
 #include "iostream"
+#include "calculations.h"
 
 using namespace std;
-
-#define PI 3.14159
 
 void optionChoose(int option);
 void optionMenu();
@@ -17,21 +16,27 @@ int main(int argc, char const *argv[]) {
 void optionChoose(int option) {
     switch (option) {
         case 1:
-            cout << "You chose option 1" << endl;
+            Calculations::area_of_circle();
             break;
         case 2:
-            cout << "You chose option 2" << endl;
+            Calculations::area_of_rectangle();
             break;
         case 3:
-            cout << "You chose option 3" << endl;
+            Calculations::area_of_triangle();
             break;
         case 4:
-            cout << "You chose option 4" << endl;
+            exit(0);
             break;
         default:
             cout << "Invalid option" << endl;
             break;
     }
+
+    cout << "Press any key to continue..." << endl;
+    cin.get();
+    cin.get();
+    optionMenu();
+    
 }
 
 void optionMenu() {
