@@ -26,6 +26,9 @@ void optionChoose(int option) {
             Calculations::area_of_triangle();
             break;
         case 4:
+            Calculations::arithmetic_sequence();
+            break;
+        case 5:
             exit(0);
             break;
         default:
@@ -48,7 +51,8 @@ void optionMenu() {
         cout << "1. Calculate the area of a circle" << endl;
         cout << "2. Calculate the area of a rectangle" << endl;
         cout << "3. Calculate the area of a triangle" << endl;
-        cout << "4. Exit" << endl;
+        cout << "4. Artihmetic sequence" << endl;
+        cout << "5. Exit" << endl;
         cin >> option;
     } while (option < 1 || option > 4); {
         optionChoose(option);

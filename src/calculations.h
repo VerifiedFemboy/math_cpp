@@ -9,6 +9,7 @@ class Calculations {
         static void area_of_circle();
         static void area_of_rectangle();
         static void area_of_triangle();
+        static void arithmetic_sequence();
 };
 
 
@@ -35,4 +36,15 @@ void Calculations::area_of_triangle() {
     cout << "Enter the height of the triangle: ";
     cin >> height;
     cout << "The area of the triangle is: " << 0.5 * base * height << endl;
+}
+
+void Calculations::arithmetic_sequence() {
+    int a, d, n;
+    cout << "Enter the first term of the sequence: ";
+    cin >> a;
+    cout << "Enter the common difference of the sequence: ";
+    cin >> d;
+    cout << "Enter the number of terms in the sequence: ";
+    cin >> n;
+    cout << "The sum of the first " << n << " terms of the arithmetic sequence is: " << n * (2 * a + (n - 1) * d) / 2 << endl;
 }
