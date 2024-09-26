@@ -5,6 +5,7 @@ using namespace std;
 
 void optionChoose(int option);
 void optionMenu();
+void clearScreen();
 
 int main(int argc, char const *argv[]) {
     
@@ -42,7 +43,7 @@ void optionChoose(int option) {
 void optionMenu() {
     int option;
     do {
-        system("clear");
+        clearScreen();
         cout << "Choose an option: " << endl;
         cout << "1. Calculate the area of a circle" << endl;
         cout << "2. Calculate the area of a rectangle" << endl;
@@ -52,4 +53,12 @@ void optionMenu() {
     } while (option < 1 || option > 4); {
         optionChoose(option);
     }
+}
+
+void clearScreen() {
+    #ifdef _WIN32
+        system("cls");
+    #else
+        system("clear");
+    #endif
 }
