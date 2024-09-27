@@ -10,6 +10,7 @@ class Calculations {
         static void area_of_rectangle();
         static void area_of_triangle();
         static void arithmetic_sequence();
+        static void calcuate_percentage();
 };
 
 
@@ -47,4 +48,13 @@ void Calculations::arithmetic_sequence() {
     cout << "Enter the number of terms in the sequence: ";
     cin >> n;
     cout << "The sum of the first " << n << " terms of the arithmetic sequence is: " << n * (2 * a + (n - 1) * d) / 2 << endl;
+}
+
+void Calculations::calcuate_percentage() {
+    float percentage, number;
+    cout << "Enter the percentage: ";
+    cin >> percentage;
+    cout << "Enter the number: ";
+    cin >> number;
+    cout << "The percentage of " << number << " is: " << (percentage / 100) * number << endl;
 }
