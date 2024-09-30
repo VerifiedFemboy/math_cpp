@@ -9,6 +9,7 @@ class Calculations {
         static void area_of_circle();
         static void area_of_rectangle();
         static void area_of_triangle();
+        static void area_of_polygon();
         static void arithmetic_sequence();
         static void calcuate_percentage();
 };
@@ -57,4 +58,16 @@ void Calculations::calcuate_percentage() {
     cout << "Enter the number: ";
     cin >> number;
     cout << "The percentage of " << number << " is: " << (percentage / 100) * number << endl;
+}
+
+void Calculations::area_of_polygon() {
+    int sides;
+    float length, apothem;
+    cout << "Enter the number of sides of the polygon: ";
+    cin >> sides;
+    cout << "Enter the length of the side of the polygon: ";
+    cin >> length;
+    cout << "Enter the apothem of the polygon: ";
+    cin >> apothem;
+    cout << "The area of the polygon is: " << 0.5 * sides * length * apothem << endl;
 }

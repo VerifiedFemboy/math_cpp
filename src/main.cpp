@@ -26,12 +26,15 @@ void optionChoose(int option) {
             Calculations::area_of_triangle();
             break;
         case 4:
-            Calculations::arithmetic_sequence();
+            Calculations::area_of_polygon();
             break;
         case 5:
-            Calculations::calcuate_percentage();
+            Calculations::arithmetic_sequence();
             break;
         case 6:
+            Calculations::calcuate_percentage();
+            break;
+        case 7:
             exit(0);
             break;
         default:
@@ -54,9 +57,10 @@ void optionMenu() {
         cout << "1. Calculate the area of a circle" << endl;
         cout << "2. Calculate the area of a rectangle" << endl;
         cout << "3. Calculate the area of a triangle" << endl;
-        cout << "4. Artihmetic sequence" << endl;
-        cout << "5. Calculate Percentage" << endl;
-        cout << "6. Exit" << endl;
+        cout << "4. Calculate the area of a polygon" << endl;
+        cout << "5. Artihmetic sequence" << endl;
+        cout << "6. Calculate Percentage" << endl;
+        cout << "7. Exit" << endl;
         cin >> option;
     } while (option < 1 || option > 7); {
         optionChoose(option);
